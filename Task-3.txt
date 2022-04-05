@@ -1,0 +1,118 @@
+
+Iterate over all for loops
+
+var users =
+    [{
+      "id": 1,
+      "first_name": "Robert",
+      "last_name": "Schwartz",
+      "email": "rob23@gmail.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Lucy",
+      "last_name": "Ballmer",
+      "email": "lucyb56@gmail.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Anna",
+      "last_name": "Smith",
+      "email": "annasmith23@gmail.com"
+    },
+    {
+      "id": 4,
+      "first_name": "Robert",
+      "last_name": "Brown",
+      "email": "bobbrown432@yahoo.com"
+    },
+    {
+      "id": 5,
+      "first_name": "Roger",
+      "last_name": "Bacon",
+      "email": "rogerbacon12@yahoo.com"
+    }];
+
+Output:
+
+{id: 1, first_name: 'Robert', last_name: 'Schwartz', email: 'rob23@gmail.com'}
+ {id: 2, first_name: 'Lucy', last_name: 'Ballmer', email: 'lucyb56@gmail.com'}
+ {id: 3, first_name: 'Anna', last_name: 'Smith', email: 'annasmith23@gmail.com'}
+{id: 4, first_name: 'Robert', last_name: 'Brown', email: 'bobbrown432@yahoo.com'}t
+{id: 5, first_name: 'Roger', last_name: 'Bacon', email: 'rogerbacon12@yahoo.com'}
+
+
+for loop :
+
+for (let index = 0; index < users.length; index++) {
+    console.log(users[index]);
+}
+
+for..in
+
+for(var i in users)
+    {
+        console.log(users[i]);
+    }
+
+for...of
+
+for(var i of users)
+    {
+        console.log(users);
+    }
+
+for...each
+users.forEach(function(u)
+{
+console.log(u);
+})
+
+
+Create your own resume data in JSON format
+
+
+
+   
+let myResume={
+    "basics": {
+      "name": "Bmd Hafeez Isaq Basha",
+      "email": "isaaqbasha04@gmail.com",
+      "phone": 9876543210,
+      "degree": "MCA",
+      "location": {
+        "address": "21/405/19/2 RTC Colony",
+        "postalCode": 518301,
+        "city": "Kurnool",
+        "state": "Andhra Pradesh",
+        "country": "India"
+      }
+    },
+    "education": [
+      {
+        "institution": "Shree Vivekananda Institute of science",
+        "department": "MCA",
+        "studyType": "fulltime",
+        "gpa": 7.0,
+      }
+    ],
+    "skills": [
+      {
+        "name": "Java,HTML",
+        "level": "beginer",
+      }
+    ],
+    "languages": [
+      {
+        "language": "Enlish,Telugu,Hindi",
+      }
+    ],
+    "interests": [
+      {
+        "name": "Playing Cricket",
+      }
+    ]
+  }
+  console.log(myResume);
+  
+
